@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Sarabun:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap');
+
+/* basics settings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+strong {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* class font */
+.font_sarabun {
+  font-family: var(--font_sarabun);
+}
+
+/* variables */
+:root {
+  --font_sarabun: "Sarabun", sans-serif;
+  --font_playfair: "Playfair", serif;
+  --gray_1: #f5f5f5;
+  --gray_2: #ededed;
+  --gray_3: #e6e6e6;
+  --gray_6: #b8b8b8;
+  --gray_10: #666666;
+
+  --yellow_00: #fff1b3;
+  --yellow_01: #ffe987;
+  --yellow_02: #f4da69;
+  --yellow_07: #897D05;
+  --yellow_08: #7A6F00;
+  --yellow_09: #645b00;
+}
+
+/* header */
+
+/*card promotional*/
+.yellow_01 {
+  background-color: var(--yellow_01);
+  padding: 6px 0;
+}
+
+.yellow_01 p {
+  font-size: 10px;
+  font-weight: 200;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 40px;
+}
+
+.bar_sale {
+  text-align: center;
+}
+
+/* header nav */
+.nav_bg {
+  background-color: var(--gray_1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  font-weight: 200;
+  font-size: 24px;
+  padding: 16px 0;
+}
+
+.left_nav,
+.right_nav {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.right_nav {
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+nav ul a {
+  color: var(--gray_10);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  height: 44px;
+  border-radius: 2px;
+}
+
+.logo {
+  display: flex;
+  line-height: 0;
+}
+
+.enter_link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* navbar hover */
+.nav_bg ul a:hover {
+  background-color: var(--gray_2);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 2px 2px rgba(184, 184, 184, 0.15);
+}
+
+/* footer */
+.footer_bg {
+  padding: 40px 0 20px 0;
+  background-color: var(--yellow_00);
+}
+
+.footer_bg .container {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  color: var(--yellow_09);
+  margin-bottom: 15px;
+}
+
+/* left footer */
+.left_footer {
+  max-width: 407px;
+}
+
+.left_footer .title {
+  margin-bottom: 40px;
+}
+
+.left_footer form {
+  display: flex;
+  flex-direction: column;
+}
+
+.left_footer form input {
+  max-width: 390px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid var(--yellow_02);
+  border-radius: 2px;
+  font-size: 16px;
+  background-color: transparent;
+  font-family: var(--font_sarabun);
+}
+
+.left_footer form input::placeholder {
+  color: var(--yellow_09);
+  font-weight: 300;
+}
+
+.left_footer form .checkbox_container {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.left_footer form .checkbox_container input[type="checkbox"] {
+  margin: 0;
+  vertical-align: middle;
+
+}
+
+.left_footer button {
+  font-family: var(--font_sarabun);
+  width: 122px;
+  height: 40px;
+  border-radius: 2px;
+  border: 1px solid var(--yellow_09);
+  background-color: transparent;
+  color: var(--yellow_09);
+  font-size: 20px;
+  font-weight: 600;
+  align-self: center;
+  margin-top: 40px;
+}
+
+/* middle footer */
+.middle_footer ul {
+  display: flex;
+  gap: 10px;
+}
+
+.middle_footer .email,
+.middle_footer .phone {
+  color: var(--yellow_09);
+  font-weight: 300;
+}
+
+.middle_footer .email {
+  margin-bottom: 5px;
+}
+
+.middle_footer .social_media {
+  margin-top: 40px;
+}
+
+/* right footer */
+.right_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.right_footer ul {
+  display: flex;
+  align-self: center;
+  gap: 30px;
+}
+
+.right_footer .back_to_top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  color: var(--yellow_07);
+  padding: 10px 20px;
+  margin-top: 210px;
+  border-bottom: 1px solid var(--yellow_00);
+  box-shadow: 0px 2px 2px 1px rgba(255, 233, 135, 0.25);
+}
+
+.right_footer .back_to_top:hover {
+  background-color: var(--yellow_01);
+  transition: 0.3s ease-in-out;
+}
+
+
+
+/* copyright */
+.copyright {
+  font-family: var(--font_playfair);
+  font-size: 18px;
+  text-align: center;
+  margin-top: 59px;
+  color: var(--yellow_09);
+}
