@@ -201,6 +201,10 @@ nav ul a {
 }
 
 /* Featured Items Section */
+.featured-items {
+  background-color: var(--gray_14);
+}
+
 .featured-items .container {
   padding: 0 80px;
 }
