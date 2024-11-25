@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Sarabun:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap");
 
 /* basics settings */
 * {
@@ -7,6 +6,13 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  font-family: var(--font_sarabun);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 40px;
 }
 
 strong {
@@ -18,25 +24,31 @@ a {
 }
 
 /* class font */
-.font_sarabun {
-  font-family: var(--font_sarabun);
+.font_fleur {
+  font-family: var(--font_fleur);
+  font-weight: normal;
 }
 
 /* variables */
 :root {
   --font_sarabun: "Sarabun", sans-serif;
   --font_playfair: "Playfair", serif;
+  --font_fleur: "Fleur De Leah", serif;
   --gray_1: #f5f5f5;
   --gray_2: #ededed;
   --gray_3: #e6e6e6;
   --gray_6: #b8b8b8;
   --gray_10: #666666;
+  --gray_11: #525252;
+  --gray_12: #444444;
+  --gray_13: #333333;
+  --gray_14: #141414;
 
   --yellow_00: #fff1b3;
   --yellow_01: #ffe987;
   --yellow_02: #f4da69;
-  --yellow_07: #897D05;
-  --yellow_08: #7A6F00;
+  --yellow_07: #897d05;
+  --yellow_08: #7a6f00;
   --yellow_09: #645b00;
 }
 
@@ -51,11 +63,6 @@ a {
 .yellow_01 p {
   font-size: 10px;
   font-weight: 200;
-}
-
-.container {
-  max-width: 1440px;
-  padding: 0 40px;
 }
 
 .bar_sale {
@@ -116,6 +123,99 @@ nav ul a {
   box-shadow: 0px 2px 2px rgba(184, 184, 184, 0.15);
 }
 
+/* Main */
+/* Presentation Section */
+.presentation {
+  padding: 80px 0 67px 0;
+}
+
+.presentation img {
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px -2px rgba(0, 0, 0, 0.1);
+}
+
+.presentation .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.square_image {
+  max-width: 427px;
+}
+
+.intro,
+.presentation-images {
+  max-width: 50%;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.intro h1 {
+  margin-top: 160px;
+  font-size: 128px;
+  color: var(--gray_11);
+  letter-spacing: 1px;
+  line-height: 130px;
+}
+
+.intro a {
+  margin-top: 105px;
+  padding: 15px 30px;
+  width: 218px;
+  height: 69px;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #fdf6a5 0%, #ffe987 100%);
+  color: var(--gray_11);
+  font-size: 32px;
+  font-weight: 100;
+}
+
+.intro a:hover {
+  background: linear-gradient(180deg, #ffe987 0%, #fdf6a5 100%);
+}
+
+.intro a:active {
+  color: var(--gray_1);
+}
+
+.intro img {
+  margin-top: 280px;
+  align-self: flex-start;
+  margin-left: 40px;
+}
+
+.presentation-images .big_image {
+  max-width: 543px;
+}
+
+.presentation-images .square_image {
+  position: relative;
+  top: -132px;
+  right: 150px;
+}
+
+/* Featured Items Section */
+.featured-items .container {
+  padding: 0 80px;
+}
+
+.featured-items .items-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.featured-items .item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 /* footer */
 .footer_bg {
   padding: 40px 0 20px 0;
@@ -174,7 +274,6 @@ nav ul a {
 .left_footer form .checkbox_container input[type="checkbox"] {
   margin: 0;
   vertical-align: middle;
-
 }
 
 .left_footer button {
@@ -240,8 +339,6 @@ nav ul a {
   background-color: var(--yellow_01);
   transition: 0.3s ease-in-out;
 }
-
-
 
 /* copyright */
 .copyright {
