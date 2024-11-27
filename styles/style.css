@@ -2095,3 +2095,27 @@ main nav .container ul li a {
         font-size: 24px;
     }
 }
+
+/* Ocultar ou diminuir setas do carrossel em dispositivos móveis */
+@media (max-width: 768px) {
+    .new-releases .swiper-button-next,
+    .new-releases .swiper-button-prev {
+        width: 20px !important;  /* Reduz a largura */
+        height: 20px !important; /* Reduz a altura */
+        transform: scale(0.7);   /* Reduz o tamanho do ícone */
+    }
+
+    .new-releases .swiper-button-next::after,
+    .new-releases .swiper-button-prev::after {
+        font-size: 20px !important; /* Reduz o tamanho do ícone da seta */
+    }
+
+    /* Ajusta a posição das setas */
+    .new-releases .swiper-button-prev {
+        left: 5px;
+    }
+
+    .new-releases .swiper-button-next {
+        right: 5px;
+    }
+}
