@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Luminosa Jóias</title>
   <link rel="stylesheet" href="styles/index_style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -79,8 +81,8 @@
               <img src="assets/img/ring.jpg" alt="Anel">
               <span class="item-tag">Anéis</span>
               <div class="item-info">
-                  <p class="price">R$ 1.299,00</p>
-                  <p class="date">Lançamento: Janeiro 2024</p>
+                <p class="price">R$ 1.299,00</p>
+                <p class="date">Lançamento: Janeiro 2024</p>
               </div>
             </div>
           </div>
@@ -90,8 +92,8 @@
               <img src="assets/img/earring.jpg" alt="Brinco">
               <span class="item-tag">Brincos</span>
               <div class="item-info">
-                  <p class="price">R$ 1.499,00</p>
-                  <p class="date">Lançamento: Fevereiro 2024</p>
+                <p class="price">R$ 1.499,00</p>
+                <p class="date">Lançamento: Fevereiro 2024</p>
               </div>
             </div>
             <div class="item-text">
@@ -109,8 +111,8 @@
               <img src="assets/img/necklace.jpg" alt="Colar">
               <span class="item-tag">Colares</span>
               <div class="item-info">
-                  <p class="price">R$ 1.899,00</p>
-                  <p class="date">Lançamento: Março 2024</p>
+                <p class="price">R$ 1.899,00</p>
+                <p class="date">Lançamento: Março 2024</p>
               </div>
             </div>
           </div>
@@ -120,8 +122,8 @@
               <img src="assets/img/bracelet.jpg" alt="Pulseira">
               <span class="item-tag">Pulseiras</span>
               <div class="item-info">
-                  <p class="price">R$ 999,00</p>
-                  <p class="date">Lançamento: Abril 2024</p>
+                <p class="price">R$ 999,00</p>
+                <p class="date">Lançamento: Abril 2024</p>
               </div>
             </div>
             <div class="item-text">
@@ -136,27 +138,58 @@
     <!-- New Releases Carousel Section -->
     <section class="new-releases">
       <div class="container">
-        <h2>Lançamentos</h2>
-        <button class="carousel-btn prev">&lt;</button>
-        <div class="carousel">
-          <div class="carousel-items">
-            <div class="carousel-item">
-              <img src="assets/img/new1.jpg" alt="Lançamento 1">
-              <h3>Nome do Item</h3>
-              <p>R$ 799,00</p>
-            </div>
-            <div class="carousel-item">
-              <img src="assets/img/new2.jpg" alt="Lançamento 2">
-              <h3>Nome do Item</h3>
-              <p>R$ 899,00</p>
-            </div>
-            <div class="carousel-item">
-              <img src="assets/img/new3.jpg" alt="Lançamento 3">
-              <h3>Nome do Item</h3>
-              <p>R$ 999,00</p>
-            </div>
+        <div class="releases-header">
+          <h2 class="font_playfair">Lançamentos</h2>
+          <div class="swiper-navigation">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
-          <button class="carousel-btn next">&gt;</button>
+        </div>
+
+        <div class="swiper releases-slider">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="release-item">
+                <div class="item-image">
+                  <img src="assets/img/card_lancamento_01.jpg" alt="Produto 1">
+                  <span class="item-tag">R$ 1.299,00</span>
+                </div>
+                <h3 class="font_playfair">Anel Floral</h3>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="release-item">
+                <div class="item-image">
+                  <img src="assets/img/card_lancamento_02.jpg" alt="Produto 1">
+                  <span class="item-tag">R$ 1.299,00</span>
+                </div>
+                <h3 class="font_playfair">Anel Floral</h3>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="release-item">
+                <div class="item-image">
+                  <img src="assets/img/card_lancamento_03.jpg" alt="Produto 1">
+                  <span class="item-tag">R$ 1.299,00</span>
+                </div>
+                <h3 class="font_playfair">Anel Floral</h3>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="release-item">
+                <div class="item-image">
+                  <img src="assets/img/card_lancamento_02.jpg" alt="Produto 1">
+                  <span class="item-tag">R$ 1.299,00</span>
+                </div>
+                <h3 class="font_playfair">Anel Floral</h3>
+              </div>
+            </div>
+            <!-- Mais slides... -->
+          </div>
         </div>
       </div>
     </section>
@@ -164,25 +197,120 @@
     <!-- Photobook Section -->
     <section class="photobook">
       <div class="container">
+        <h2 class="font_playfair title"><span class="yellow">Photo</span>book</h2>
         <div class="photo-grid">
-          <div class="photo-item large">
-            <img src="assets/img/photo1.jpg" alt="Foto 1">
-          </div>
+          <!-- Primeira coluna -->
           <div class="photo-item">
-            <img src="assets/img/photo2.jpg" alt="Foto 2">
+            <img src="https://picsum.photos/id/237/400/400" alt="Cliente com joia">
+            <div class="photo-overlay">
+              <span class="jewelry-name">Anel Solitário Diamond</span>
+              <div class="user-info">
+                <div class="user-details">
+                  <h3>@mariasantos</h3>
+                  <span class="date">15 Mar 2024</span>
+                </div>
+              </div>
+            </div>
           </div>
+
           <div class="photo-item">
-            <img src="assets/img/photo3.jpg" alt="Foto 3">
+            <img src="https://picsum.photos/id/238/400/400" alt="Cliente com joia">
+            <div class="photo-overlay">
+              <span class="jewelry-name">Colar Pérolas Naturais</span>
+              <div class="user-info">
+                <div class="user-details">
+                  <h3>@joanasilva</h3>
+                  <span class="date">14 Mar 2024</span>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <!-- Segunda coluna -->
           <div class="photo-item">
-            <img src="assets/img/photo4.jpg" alt="Foto 4">
+            <img src="https://picsum.photos/id/239/400/400" alt="Cliente com joia">
+            <div class="photo-overlay">
+              <span class="jewelry-name">Brincos Crystal Drop</span>
+              <div class="user-info">
+                <div class="user-details">
+                  <h3>@analuiza</h3>
+                  <span class="date">13 Mar 2024</span>
+                </div>
+              </div>
+            </div>
           </div>
+
           <div class="photo-item">
-            <img src="assets/img/photo5.jpg" alt="Foto 5">
+            <img src="https://picsum.photos/id/240/400/400" alt="Cliente com joia">
+            <div class="photo-overlay">
+              <span class="jewelry-name">Pulseira Infinity Gold</span>
+              <div class="user-info">
+                <div class="user-details">
+                  <h3>@carolinafernandes</h3>
+                  <span class="date">12 Mar 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Terceira coluna - imagem grande -->
+          <div class="photo-item">
+            <img src="https://picsum.photos/id/241/400/800" alt="Cliente com joia">
+            <div class="photo-overlay">
+              <span class="jewelry-name">Conjunto Royal Sapphire</span>
+              <div class="user-info">
+                <div class="user-details">
+                  <h3>@beatrizlima</h3>
+                  <span class="date">11 Mar 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quarta coluna -->
+          <div class="photo-item">
+            <img src="https://picsum.photos/id/242/400/400" alt="Cliente com joia">
+            <div class="photo-overlay">
+              <span class="jewelry-name">Anel Esmeralda Elite</span>
+              <div class="user-info">
+                <div class="user-details">
+                  <h3>@isabelasouza</h3>
+                  <span class="date">10 Mar 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="photo-item">
+            <img src="https://picsum.photos/id/243/400/400" alt="Cliente com joia">
+            <div class="photo-overlay">
+              <span class="jewelry-name">Gargantilha Moon Light</span>
+              <div class="user-info">
+                <div class="user-details">
+                  <h3>@lauramoreira</h3>
+                  <span class="date">9 Mar 2024</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Adicionar após o fechamento da section photobook -->
+    <div class="photo-modal" id="photoModal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <img src="" alt="Imagem expandida" id="modalImage">
+        <div class="modal-info">
+          <span class="modal-jewelry-name"></span>
+          <div class="modal-user-info">
+            <h3></h3>
+            <span class="modal-date"></span>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- footer -->
     <footer>
@@ -237,7 +365,9 @@
 
         </div>
         <div class="copyright">
-          <p>Rua das Flores, 123, apto 45, Centro, Cidade das Flores - SP, 12345-678</p>
+          <p>
+            Rua das Flores, 123, apto 45, Centro, Cidade das Flores - SP, 12345-678
+          </p>
           <p>
             &copy; 2024 Luminosa Jóias e Co. - CNPJ: 12.345.678/0001-00
           </p>
