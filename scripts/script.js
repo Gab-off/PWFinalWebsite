@@ -25,8 +25,33 @@ const swiper = new Swiper('.releases-slider', {
         1024: {
             slidesPerView: 3,
         }
+    },
+    on: {
+        init: function () {
+            checkNavigationVisibility();
+        },
+        resize: function () {
+            checkNavigationVisibility();
+        }
     }
 });
+
+// Função para verificar e ajustar a visibilidade das setas
+function checkNavigationVisibility() {
+    const nextButton = document.querySelector('.new-releases .swiper-button-next');
+    const prevButton = document.querySelector('.new-releases .swiper-button-prev');
+    
+    if (window.innerWidth < 768) {
+        if (nextButton) nextButton.style.display = 'none';
+        if (prevButton) prevButton.style.display = 'none';
+    } else {
+        if (nextButton) nextButton.style.display = 'flex';
+        if (prevButton) prevButton.style.display = 'flex';
+    }
+}
+
+// Executar também quando a página carregar
+window.addEventListener('load', checkNavigationVisibility);
 
 document.addEventListener('DOMContentLoaded', function() {
     // Código existente do carrossel permanece igual

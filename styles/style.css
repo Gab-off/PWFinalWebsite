@@ -2096,26 +2096,34 @@ main nav .container ul li a {
     }
 }
 
-/* Ocultar ou diminuir setas do carrossel em dispositivos móveis */
+/* Mensagem de swipe - oculta por padrão */
+.swipe-message {
+    display: none;
+}
+
+/* Exibe apenas em mobile */
 @media (max-width: 768px) {
-    .new-releases .swiper-button-next,
-    .new-releases .swiper-button-prev {
-        width: 20px !important;  /* Reduz a largura */
-        height: 20px !important; /* Reduz a altura */
-        transform: scale(0.7);   /* Reduz o tamanho do ícone */
+    .swipe-message {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+        color: #666;
+        font-size: 14px;
+        font-style: italic;
+        position: absolute;
+        bottom: -30px;
+        width: 100%;
+        left: 0;
     }
 
-    .new-releases .swiper-button-next::after,
-    .new-releases .swiper-button-prev::after {
-        font-size: 20px !important; /* Reduz o tamanho do ícone da seta */
+    /* Opcional: adicionar uma pequena animação */
+    .swipe-message {
+        animation: fadeInOut 2s ease-in-out infinite;
     }
 
-    /* Ajusta a posição das setas */
-    .new-releases .swiper-button-prev {
-        left: 5px;
-    }
-
-    .new-releases .swiper-button-next {
-        right: 5px;
+    @keyframes fadeInOut {
+        0% { opacity: 0.5; }
+        50% { opacity: 1; }
+        100% { opacity: 0.5; }
     }
 }
