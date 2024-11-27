@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Coleção</title>
-  <link rel="stylesheet" href="styles/colecao_style.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -21,167 +22,213 @@
     <div class="nav_bg">
       <div class="container">
         <nav class="font_sarabun">
+          <button class="menu-mobile" aria-label="Menu">
+            <span class="hamburger"></span>
+          </button>
+
           <ul class="left_nav">
             <li><a href="colecao.html">Coleção</a></li>
-            <li><a href="http://">Loja</a></li>
+            <li><a href="#">Loja</a></li>
             <li><a href="sobre_nos.html">Sobre nós</a></li>
           </ul>
 
-          <a class="logo" href="index.html"><img src="assets/img/logo.svg" alt="" /></a>
+          <a class="logo" href="index.html">
+            <img src="assets/img/logo.svg" alt="Luminosa Jóias" />
+          </a>
 
-          <ul class="right_nav">
-            <li>
-              <a class="bag_link" href="http://"><img src="assets/img/bag_icon 1.svg" alt="" /></a>
-            </li>
-            <li>
-              <a class="enter_link" href="http://">
-                <img src="assets/img/entrar_person.svg" alt="" />
-                Entrar
-              </a>
-            </li>
-          </ul>
+          <div class="right_nav">
+            <a class="bag_link" href="#"><img src="assets/img/bag_icon 1.svg" alt="Carrinho" /></a>
+            <a class="enter_link mobile" href="#">
+              <img src="assets/img/entrar_person.svg" alt="Entrar" />
+              <span class="enter-text">Entrar</span>
+            </a>
+          </div>
         </nav>
       </div>
     </div>
   </header>
 
-<main>
-  <!-- Secondary Navigation -->
-  <nav class="secondary-nav font_sarabun">
-    <div class="container">
-      <ul>
-        <li><a href="#aneis">Anéis</a></li>
-        <li><a href="#brincos">Brincos</a></li>
-        <li><a href="#colares">Colares</a></li>
-        <li><a href="#pulseiras">Pulseiras</a></li>
-      </ul>
-    </div>
-  </nav>
+  <main>
+    <!-- Secondary Navigation -->
+    <nav class="secondary-nav font_sarabun">
+      <div class="container">
+        <ul class="second-nav">
+          <li><a href="#aneis">Anéis</a></li>
+          <li><a href="#brincos">Brincos</a></li>
+          <li><a href="#colares">Colares</a></li>
+          <li><a href="#pulseiras">Pulseiras</a></li>
+        </ul>
+      </div>
+    </nav>
 
-  <!-- Rings Section -->
-  <section id="aneis" class="product-section">
-    <div class="container">
-      <h2>Anéis</h2>
-      <p class="subtitle">Descubra nossa coleção exclusiva de anéis artesanais</p>
-      
-      <div class="products-grid">
-        <div class="product-card">
-          <img src="assets/img/anel1.jpg" alt="Anel 1">
-          <h3>Anel Luminoso</h3>
-          <p class="price">R$ 299,00</p>
-          <button class="btn-comprar">Comprar</button>
+    <!-- Rings Section -->
+    <section id="aneis" class="product-section">
+      <div class="container">
+        <img src="assets/img/Group 3Titulo Anéis.svg" alt="Titulo Anéis">
+        <div class="icon-subtitle1">
+          <img src="assets/img/leaf_icon 1.svg">
+          <p class="subtitle">Flower conquest Collection</p>
         </div>
 
-        <div class="product-card">
-          <img src="assets/img/anel2.jpg" alt="Anel 2">
-          <h3>Anel Cristal</h3>
-          <p class="price">R$ 349,00</p>
-          <button class="btn-comprar">Comprar</button>
-        </div>
-
-        <div class="product-card">
-          <img src="assets/img/anel3.jpg" alt="Anel 3">
-          <h3>Anel Dourado</h3>
-          <p class="price">R$ 399,00</p>
-          <button class="btn-comprar">Comprar</button>
+        <div class="releases-slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card-container">
+                <img src="assets/img/Anel 1.svg" alt="Anel 1" class="product-image">
+                <h3 class="product-title">Anel Luminoso</h3>
+                <p class="product-price">R$ 299,00</p>
+                <button class="btn-comprar">Comprar</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-container">
+                <img src="assets/img/Anel 2.svg" alt="Anel 2" class="product-image">
+                <h3 class="product-title">Anel Cristal</h3>
+                <p class="product-price">R$ 349,00</p>
+                <button class="btn-comprar">Comprar</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-container">
+                <img src="assets/img/Anel 3.svg" alt="Anel 3" class="product-image">
+                <h3 class="product-title">Anel Dourado</h3>
+                <p class="product-price">R$ 399,00</p>
+                <button class="btn-comprar">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Earrings Section -->
-  <section id="brincos" class="product-section">
-    <div class="container">
-      <h2>Brincos</h2>
-      <p class="subtitle">Brincos delicados feitos com pedras preciosas</p>
-      
-      <div class="products-grid">
-        <div class="product-card">
-          <img src="assets/img/brinco1.jpg" alt="Brinco 1">
-          <h3>Brinco Pérola</h3>
-          <p class="price">R$ 259,00</p>
-          <button class="btn-comprar">Comprar</button>
+    <!-- Brincos Section -->
+    <section id="brincos" class="product-section">
+      <div class="container">
+        <img src="assets/img/Group 4Titulo Brincos.svg" alt="Titulo Brincos">
+        <div class="icon-subtitle2">
+          <img src="assets/img/sun_icon 1.svg">
+          <p class="subtitle">Sun godness Collection</p>
         </div>
 
-        <div class="product-card">
-          <img src="assets/img/brinco2.jpg" alt="Brinco 2">
-          <h3>Brinco Safira</h3>
-          <p class="price">R$ 289,00</p>
-          <button class="btn-comprar">Comprar</button>
-        </div>
-
-        <div class="product-card">
-          <img src="assets/img/brinco3.jpg" alt="Brinco 3">
-          <h3>Brinco Rubi</h3>
-          <p class="price">R$ 319,00</p>
-          <button class="btn-comprar">Comprar</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Necklaces Section -->
-  <section id="colares" class="product-section">
-    <div class="container">
-      <h2>Colares</h2>
-      <p class="subtitle">Colares elegantes para todas as ocasiões</p>
-      
-      <div class="products-grid">
-        <div class="product-card">
-          <img src="assets/img/colar1.jpg" alt="Colar 1">
-          <h3>Colar Estrela</h3>
-          <p class="price">R$ 459,00</p>
-          <button class="btn-comprar">Comprar</button>
-        </div>
-
-        <div class="product-card">
-          <img src="assets/img/colar2.jpg" alt="Colar 2">
-          <h3>Colar Luna</h3>
-          <p class="price">R$ 489,00</p>
-          <button class="btn-comprar">Comprar</button>
-        </div>
-
-        <div class="product-card">
-          <img src="assets/img/colar3.jpg" alt="Colar 3">
-          <h3>Colar Sol</h3>
-          <p class="price">R$ 519,00</p>
-          <button class="btn-comprar">Comprar</button>
+        <div class="releases-slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card-container">
+                <img src="assets/img/Brinco 1.svg" alt="Brinco 1" class="product-image">
+                <h3 class="product-title">Brinco Pérola</h3>
+                <p class="product-price">R$ 259,00</p>
+                <button class="btn-comprar">Comprar</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-container">
+                <img src="assets/img/Rectangle 93Brinco 2.svg" alt="Brinco 2" class="product-image">
+                <h3 class="product-title">Brinco Safira</h3>
+                <p class="product-price">R$ 289,00</p>
+                <button class="btn-comprar">Comprar</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-container">
+                <img src="assets/img/Rectangle 107Brinco 3.svg" alt="Brinco 3" class="product-image">
+                <h3 class="product-title">Brinco Rubi</h3>
+                <p class="product-price">R$ 319,00</p>
+                <button class="btn-comprar">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Bracelets Section -->
-  <section id="pulseiras" class="product-section">
-    <div class="container">
-      <h2>Pulseiras</h2>
-      <p class="subtitle">Pulseiras sofisticadas com acabamento premium</p>
-      
-      <div class="products-grid">
-        <div class="product-card">
-          <img src="assets/img/pulseira1.jpg" alt="Pulseira 1">
-          <h3>Pulseira Cristal</h3>
-          <p class="price">R$ 359,00</p>
-          <button class="btn-comprar">Comprar</button>
+    <!-- Colares Section -->
+    <section id="colares" class="product-section">
+      <div class="container">
+        <img src="assets/img/ColaresTitulo colares.svg" alt="Titulo Colares">
+        <div class="icon-subtitle3">
+          <img src="assets/img/love_icon 1.svg">
+          <p class="subtitle">Cristal love Collection</p>
         </div>
 
-        <div class="product-card">
-          <img src="assets/img/pulseira2.jpg" alt="Pulseira 2">
-          <h3>Pulseira Jade</h3>
-          <p class="price">R$ 389,00</p>
-          <button class="btn-comprar">Comprar</button>
-        </div>
-
-        <div class="product-card">
-          <img src="assets/img/pulseira3.jpg" alt="Pulseira 3">
-          <h3>Pulseira Ágata</h3>
-          <p class="price">R$ 419,00</p>
-          <button class="btn-comprar">Comprar</button>
+        <div class="releases-slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card-container">
+                <img src="assets/img/Rectangle 92Colar 1.svg" alt="Colar 1" class="product-image">
+                <h3 class="product-title">Colar Estrela</h3>
+                <p class="product-price">R$ 459,00</p>
+                <button class="btn-comprar">Comprar</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-container">
+                <img src="assets/img/Rectangle 94Colar 2.svg" alt="Colar 2" class="product-image">
+                <h3 class="product-title">Colar Luna</h3>
+                <p class="product-price">R$ 489,00</p>
+                <button class="btn-comprar">Comprar</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-container">
+                <img src="assets/img/Rectangle 110Colar 3.svg" alt="Colar 3" class="product-image">
+                <h3 class="product-title">Colar Sol</h3>
+                <p class="product-price">R$ 519,00</p>
+                <button class="btn-comprar">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </div>
-    </div>
-  </section>
-</main>
+    </section>
+
+    <!-- Pulseiras Section -->
+    <section id="pulseiras" class="product-section">
+      <div class="container">
+        <img src="assets/img/Group 6Titulo Pulseiras.svg" alt="Titulo Pulseiras">
+        <div class="icon-subtitle4">
+          <img src="assets/img/lovePetit_icon 1.svg">
+          <p class="subtitle">Cristal petit love Collection</p>
+        </div>
+
+        <div class="releases-slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card-container">
+                <img src="assets/img/Rectangle Pulseira 1.svg" alt="Pulseira 1" class="product-image">
+                <h3 class="product-title">Pulseira Cristal</h3>
+                <p class="product-price">R$ 359,00</p>
+                <button class="btn-comprar">Comprar</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-container">
+                <img src="assets/img/Rectangle 99Pulseira  2.svg" alt="Pulseira 2" class="product-image">
+                <h3 class="product-title">Pulseira Jade</h3>
+                <p class="product-price">R$ 389,00</p>
+                <button class="btn-comprar">Comprar</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-container">
+                <img src="assets/img/Rectangle Pulseira 3.svg" alt="Pulseira 3" class="product-image">
+                <h3 class="product-title">Pulseira Ágata</h3>
+                <p class="product-price">R$ 419,00</p>
+                <button class="btn-comprar">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+  </main>
 
 
   <!-- footer -->
@@ -198,10 +245,10 @@
             <input type="name" placeholder="Nome" />
             <input type="email" placeholder="E-mail" />
             <div class="checkbox_container">
-              <input type="checkbox" />
-              <label for="checkbox">
-                Eu li e concordo os termos de uso e a política de privacidade do Luminosa Jóias e Co.
-              </label>
+              <input type="checkbox" id="customCheckbox" />
+              <label for="customCheckbox">Eu li e concordo os
+                termos de uso e a política de privacidade do Luminosa
+                Jóias e Co.</label>
             </div>
             <button type="submit">Inscrever</button>
           </form>
@@ -216,7 +263,7 @@
           <p class="title social_media">
             <strong>Redes sociais</strong>
           </p>
-          <ul>
+          <ul class="social_media_list">
             <li><a href="http://"><img src="assets/img/instagram.svg" alt="Instagram" /></a></li>
             <li><a href="http://"><img src="assets/img/facebook.svg" alt="Facebook" /></a></li>
             <li><a href="http://"><img src="assets/img/x.svg" alt="X" /></a></li>
@@ -230,20 +277,19 @@
             <li><img src="assets/img/visa_icon.svg" alt="Visa" /></li>
             <li><img src="assets/img/mastercard_icon.svg" alt="Mastercard" /></li>
             <li><img src="assets/img/pix_icon.svg" alt="Pix" /></li>
-
           </ul>
           <a class="back_to_top" href="">Voltar ao topo <img src="assets/img/seta_cima.svg" alt="Voltar ao topo" /></a>
         </div>
-
       </div>
       <div class="copyright">
         <p>Rua das Flores, 123, apto 45, Centro, Cidade das Flores - SP, 12345-678</p>
-        <p>
-          &copy; 2024 Luminosa Jóias e Co. - CNPJ: 12.345.678/0001-00
-        </p>
+        <p>&copy; 2024 Luminosa Jóias e Co. - CNPJ: 12.345.678/0001-00</p>
       </div>
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="scripts/colecao.js"></script>
 </body>
 
 </html>
