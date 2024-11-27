@@ -116,6 +116,496 @@ nav ul a {
   box-shadow: 0px 2px 2px rgba(184, 184, 184, 0.15);
 }
 
+/* Secondary Navigation */
+main nav .container {
+  width: 1440px;
+}
+
+.second-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: solid 1px var(--gray_1);
+}
+
+main nav .container ul li a {
+  font-family: var(--font_playfair);
+  color: #000000;
+  height: 98px;
+}
+
+/* Products grid adjustment */
+.product-section .products-grid {
+  display: flex;
+  gap: 40px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+/* Rings Section */
+.container .icon-subtitle1 {
+  display: flex;
+  gap: 5px;
+  padding-top: 7px;
+}
+
+.subtitle {
+  color: var(--yellow_09);
+  height: 26px;
+}
+
+.icon-subtitle1 img {
+  height: 17px;
+}
+
+.card-ring1 {
+  display: flex;
+  border: solid 1px var(--gray_6);
+  width: 427px;
+  height: 671px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-ring1 img {
+  padding: 73px 47px 77px;
+}
+
+.card-ring1 h3 {
+  padding-bottom: 36px;
+  font-family: var(--font_sarabun);
+  height: 22px;
+}
+
+.card-ring1 .price {
+  padding-bottom: 55px;
+  height: 22px;
+  font-size-adjust: var(--font_playfair);
+}
+
+.card-ring1 .btn-comprar {
+  text-decoration: none;
+  border: none;
+  background-image: linear-gradient( to top, #E0E0E0, var(--gray_2) );
+  width: 193px;
+  height: 63px;
+  font-size: 32px;
+}
+
+.card-ring2 {
+  display: flex;
+  border: solid 1px var(--gray_6);
+  width: 426px;
+  height: 671px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-ring2 img {
+  padding: 73px 47px 77px;
+}
+
+.card-ring2 h3 {
+  padding-bottom: 36px;
+  font-family: var(--font_sarabun);
+  height: 22px;
+}
+
+.card-ring2 .price {
+  padding-bottom: 55px;
+  height: 22px;
+  font-size-adjust: var(--font_playfair);
+}
+
+.card-ring2 .btn-comprar {
+  text-decoration: none;
+  border: none;
+  background-image: linear-gradient( to top, #E0E0E0, var(--gray_2) );
+  width: 193px;
+  height: 63px;
+  font-size: 32px;
+}
+
+.card-ring3 {
+  display: flex;
+  border: solid 1px var(--gray_6);
+  width: 427px;
+  height: 671px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-ring3 img {
+  padding: 73px 47px 77px;
+}
+
+.card-ring3 h3 {
+  padding-bottom: 36px;
+  font-family: var(--font_sarabun);
+  height: 22px;
+}
+
+.card-ring3 .price {
+  padding-bottom: 55px;
+  height: 22px;
+  font-size-adjust: var(--font_playfair);
+}
+
+.card-ring3 .btn-comprar {
+  text-decoration: none;
+  border: none;
+  background-image: linear-gradient( to top, #E0E0E0, var(--gray_2) );
+  width: 193px;
+  height: 63px;
+  font-size: 32px;
+}
+
+/* Earrings Section */
+.container .icon-subtitle2 {
+  display: flex;
+  gap: 5px;
+  padding-top: 7px;
+}
+
+.icon-subtitle2 img {
+  height: 17px;
+}
+
+.card-earring1 {
+  display: flex;
+  border: solid 1px var(--gray_6);
+  width: 427px;
+  height: 671px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-earring1 img {
+  padding: 73px 47px 77px;
+}
+
+.card-earring1 h3 {
+  padding-bottom: 36px;
+  font-family: var(--font_sarabun);
+  height: 22px;
+}
+
+.card-earring1 .price {
+  padding-bottom: 55px;
+  height: 22px;
+  font-size-adjust: var(--font_playfair);
+}
+
+.card-earring1 .btn-comprar {
+  text-decoration: none;
+  border: none;
+  background-image: linear-gradient( to top, #E0E0E0, var(--gray_2) );
+  width: 193px;
+  height: 63px;
+  font-size: 32px;
+}
+
+.card-earring2 {
+  display: flex;
+  border: solid 1px var(--gray_6);
+  width: 427px;
+  height: 671px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-earring2 img {
+  padding: 73px 47px 77px;
+}
+
+.card-earring2 h3 {
+  padding-bottom: 36px;
+  font-family: var(--font_sarabun);
+  height: 22px;
+}
+
+.card-earring2 .price {
+  padding-bottom: 55px;
+  height: 22px;
+  font-size-adjust: var(--font_playfair);
+}
+
+.card-earring2 .btn-comprar {
+  text-decoration: none;
+  border: none;
+  background-image: linear-gradient( to top, #E0E0E0, var(--gray_2) );
+  width: 193px;
+  height: 63px;
+  font-size: 32px;
+}
+
+.card-earring3 {
+  display: flex;
+  border: solid 1px var(--gray_6);
+  width: 427px;
+  height: 671px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-earring3 img {
+  padding: 73px 47px 77px;
+}
+
+.card-earring3 h3 {
+  padding-bottom: 36px;
+  font-family: var(--font_sarabun);
+  height: 22px;
+}
+
+.card-earring3 .price {
+  padding-bottom: 55px;
+  height: 22px;
+  font-size-adjust: var(--font_playfair);
+}
+
+.card-earring3 .btn-comprar {
+  text-decoration: none;
+  border: none;
+  background-image: linear-gradient( to top, #E0E0E0, var(--gray_2) );
+  width: 193px;
+  height: 63px;
+  font-size: 32px;
+}
+
+/* Necklaces Section */
+.container .icon-subtitle3 {
+  display: flex;
+  gap: 5px;
+  padding-top: 7px;
+}
+
+.icon-subtitle3 img {
+  height: 17px;
+}
+
+.card-necklaces1 {
+  display: flex;
+  border: solid 1px var(--gray_6);
+  width: 427px;
+  height: 671px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-necklaces1 img {
+  padding: 73px 47px 77px;
+}
+
+.card-necklaces1 h3 {
+  padding-bottom: 36px;
+  font-family: var(--font_sarabun);
+  height: 22px;
+}
+
+.card-necklaces1 .price {
+  padding-bottom: 55px;
+  height: 22px;
+  font-size-adjust: var(--font_playfair);
+}
+
+.card-necklaces1 .btn-comprar {
+  text-decoration: none;
+  border: none;
+  background-image: linear-gradient( to top, #E0E0E0, var(--gray_2) );
+  width: 193px;
+  height: 63px;
+  font-size: 32px;
+}
+
+.card-necklaces2 {
+  display: flex;
+  border: solid 1px var(--gray_6);
+  width: 427px;
+  height: 671px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-necklaces2 img {
+  padding: 73px 47px 77px;
+}
+
+.card-necklaces2 h3 {
+  padding-bottom: 36px;
+  font-family: var(--font_sarabun);
+  height: 22px;
+}
+
+.card-necklaces2 .price {
+  padding-bottom: 55px;
+  height: 22px;
+  font-size-adjust: var(--font_playfair);
+}
+
+.card-necklaces2 .btn-comprar {
+  text-decoration: none;
+  border: none;
+  background-image: linear-gradient( to top, #E0E0E0, var(--gray_2) );
+  width: 193px;
+  height: 63px;
+  font-size: 32px;
+}
+
+.card-necklaces3 {
+  display: flex;
+  border: solid 1px var(--gray_6);
+  width: 427px;
+  height: 671px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-necklaces3 img {
+  padding: 73px 47px 77px;
+}
+
+.card-necklaces3 h3 {
+  padding-bottom: 36px;
+  font-family: var(--font_sarabun);
+  height: 22px;
+}
+
+.card-necklaces3 .price {
+  padding-bottom: 55px;
+  height: 22px;
+  font-size-adjust: var(--font_playfair);
+}
+
+.card-necklaces3 .btn-comprar {
+  text-decoration: none;
+  border: none;
+  background-image: linear-gradient( to top, #E0E0E0, var(--gray_2) );
+  width: 193px;
+  height: 63px;
+  font-size: 32px;
+}
+
+/* Bracelets Section */
+.product-section .products-grid-final {
+  display: flex;
+  gap: 40px;
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+.container .icon-subtitle4 {
+  display: flex;
+  gap: 5px;
+  padding-top: 7px;
+}
+
+.icon-subtitle4 img {
+  height: 17px;
+}
+
+.card-bracelet1 {
+  display: flex;
+  border: solid 1px var(--gray_6);
+  width: 427px;
+  height: 671px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-bracelet1 img {
+  padding: 73px 47px 77px;
+}
+
+.card-bracelet1 h3 {
+  padding-bottom: 36px;
+  font-family: var(--font_sarabun);
+  height: 22px;
+}
+
+.card-bracelet1 .price {
+  padding-bottom: 55px;
+  height: 22px;
+  font-size-adjust: var(--font_playfair);
+}
+
+.card-bracelet1 .btn-comprar {
+  text-decoration: none;
+  border: none;
+  background-image: linear-gradient( to top, #E0E0E0, var(--gray_2) );
+  width: 193px;
+  height: 63px;
+  font-size: 32px;
+}
+
+.card-bracelet2 {
+  display: flex;
+  border: solid 1px var(--gray_6);
+  width: 427px;
+  height: 671px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-bracelet2 img {
+  padding: 73px 47px 77px;
+}
+
+.card-bracelet2 h3 {
+  padding-bottom: 36px;
+  font-family: var(--font_sarabun);
+  height: 22px;
+}
+
+.card-bracelet2 .price {
+  padding-bottom: 55px;
+  height: 22px;
+  font-size-adjust: var(--font_playfair);
+}
+
+.card-bracelet2 .btn-comprar {
+  text-decoration: none;
+  border: none;
+  background-image: linear-gradient( to top, #E0E0E0, var(--gray_2) );
+  width: 193px;
+  height: 63px;
+  font-size: 32px;
+}
+
+.card-bracelet3 {
+  display: flex;
+  border: solid 1px var(--gray_6);
+  width: 427px;
+  height: 671px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-bracelet3 img {
+  padding: 73px 47px 77px;
+}
+
+.card-bracelet3 h3 {
+  padding-bottom: 36px;
+  font-family: var(--font_sarabun);
+  height: 22px;
+}
+
+.card-bracelet3 .price {
+  padding-bottom: 55px;
+  height: 22px;
+  font-size-adjust: var(--font_playfair);
+}
+
+.card-bracelet3 .btn-comprar {
+  text-decoration: none;
+  border: none;
+  background-image: linear-gradient( to top, #E0E0E0, var(--gray_2) );
+  width: 193px;
+  height: 63px;
+  font-size: 32px;
+}
+
 /* footer */
 .footer_bg {
   padding: 40px 0 20px 0;
