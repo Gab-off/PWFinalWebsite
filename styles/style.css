@@ -2127,3 +2127,16 @@ main nav .container ul li a {
         100% { opacity: 0.5; }
     }
 }
+
+/* Estilo padrão para a logo */
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ajuste para mobile */
+@media (max-width: 768px) {
+    .logo img {
+        max-width: 150px; /* Ajuste este valor conforme necessário */
+    }
+}
