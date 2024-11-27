@@ -21,25 +21,27 @@
     <div class="nav_bg">
       <div class="container">
         <nav class="font_sarabun">
+          <button class="menu-mobile" aria-label="Menu">
+            <span class="hamburger"></span>
+          </button>
+
           <ul class="left_nav">
             <li><a href="colecao.html">Coleção</a></li>
             <li><a href="#">Loja</a></li>
             <li><a href="sobre_nos.html">Sobre nós</a></li>
           </ul>
 
-          <a class="logo" href="index.html"><img src="assets/img/logo.svg" alt="" /></a>
+          <a class="logo" href="index.html">
+            <img src="assets/img/logo.svg" alt="Luminosa Jóias" />
+          </a>
 
-          <ul class="right_nav">
-            <li>
-              <a class="bag_link" href="http://"><img src="assets/img/bag_icon 1.svg" alt="" /></a>
-            </li>
-            <li>
-              <a class="enter_link" href="http://">
-                <img src="assets/img/entrar_person.svg" alt="" />
-                Entrar
-              </a>
-            </li>
-          </ul>
+          <div class="right_nav">
+            <a class="bag_link" href="#"><img src="assets/img/bag_icon 1.svg" alt="Carrinho" /></a>
+            <a class="enter_link mobile" href="#">
+              <img src="assets/img/entrar_person.svg" alt="Entrar" />
+              <span class="enter-text">Entrar</span>
+            </a>
+          </div>
         </nav>
       </div>
     </div>
@@ -76,6 +78,10 @@
             <div class="item-image">
               <img src="assets/img/ring.jpg" alt="Anel">
               <span class="item-tag">Anéis</span>
+              <div class="item-info">
+                  <p class="price">R$ 1.299,00</p>
+                  <p class="date">Lançamento: Janeiro 2024</p>
+              </div>
             </div>
           </div>
 
@@ -83,6 +89,10 @@
             <div class="item-image">
               <img src="assets/img/earring.jpg" alt="Brinco">
               <span class="item-tag">Brincos</span>
+              <div class="item-info">
+                  <p class="price">R$ 1.499,00</p>
+                  <p class="date">Lançamento: Fevereiro 2024</p>
+              </div>
             </div>
             <div class="item-text">
               <h3>Brincos</h3>
@@ -98,15 +108,21 @@
             <div class="item-image">
               <img src="assets/img/necklace.jpg" alt="Colar">
               <span class="item-tag">Colares</span>
+              <div class="item-info">
+                  <p class="price">R$ 1.899,00</p>
+                  <p class="date">Lançamento: Março 2024</p>
+              </div>
             </div>
           </div>
-          
-          
 
           <div class="item">
             <div class="item-image">
               <img src="assets/img/bracelet.jpg" alt="Pulseira">
               <span class="item-tag">Pulseiras</span>
+              <div class="item-info">
+                  <p class="price">R$ 999,00</p>
+                  <p class="date">Lançamento: Abril 2024</p>
+              </div>
             </div>
             <div class="item-text">
               <h3>Pulseiras</h3>
@@ -228,6 +244,7 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
